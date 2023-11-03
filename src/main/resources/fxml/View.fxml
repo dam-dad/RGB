@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="view" alignment="CENTER" fillWidth="false" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane hgap="5.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="10.0" />
+          <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="250.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label text="R" />
+            <Label text="G" GridPane.rowIndex="1" />
+            <Label text="B" GridPane.rowIndex="2" />
+            <Label fx:id="redLabel" text="Label" GridPane.columnIndex="2" />
+            <Label fx:id="greenLabel" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="blueLabel" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Slider fx:id="redSlider" max="255.0" showTickMarks="true" GridPane.columnIndex="1" />
+            <Slider fx:id="greenSlider" max="255.0" showTickMarks="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Slider fx:id="blueSlider" max="255.0" showTickMarks="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
